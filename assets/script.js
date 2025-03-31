@@ -38,6 +38,7 @@ const teamMembers = [
 ];
 
 // creazione delle card
+let container =document.querySelector(".container")
 
 let userCard = (member) =>{
  const card = ` <div class="row ms-3">
@@ -57,11 +58,12 @@ let userCard = (member) =>{
 
 }
 for (let i= 0; i< teamMembers.length; i++) {
-  userCard(teamMembers(i))
+  
 
+  container.innerHTML +=  userCard(teamMembers(i))
 }
 
-let container =document.querySelector(".container")
+
 
   
   
