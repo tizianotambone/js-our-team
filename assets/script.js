@@ -38,18 +38,18 @@ const teamMembers = [
 ];
 
 // creazione delle card
-let contenitore = document.getElementById("contenitore")
+let contenitore = document.querySelector(".box")
  console.log(contenitore)
 let userCard = (member) =>{
  const card = ` 
-        <div class="col-12 col-md-6 col-lg-4 mt-3">
+        <div class="col-12 col-md-6  mt-3">
             <div class="card bg-dark text-light d-flex flex-row overflow-hidden">
                 <img src="./assets/${member.img}" alt="foto" class="img">
                 <div class="p-3">
                     <h4 class="fw-bold m-0">${member.name}</h4>
                     <p class="m-0">${member.role}</p>
                     <a href="mailto: ${member.email}" class="text-info text-decoration-none">
-                        marcobianchi@team.com
+                        ${member.email}
                     </a>
                 </div>
             </div>
