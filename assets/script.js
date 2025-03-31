@@ -36,3 +36,32 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+// creazione delle card
+
+let userCard = (member) =>{
+ const card = ` <div class="row ms-3">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card bg-dark text-light d-flex flex-row overflow-hidden">
+                <img src="./${member.img}" alt="foto" class="img">
+                <div class="p-3">
+                    <h4 class="fw-bold m-0">${member.name}</h4>
+                    <p class="m-0">${member.role}</p>
+                    <a href="mailto: ${member.email}" class="text-info text-decoration-none">
+                        marcobianchi@team.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>`
+
+}
+for (let i= 0; i< teamMembers.length; i++) {
+  userCard(teamMembers(i))
+
+}
+
+let container =document.querySelector(".container")
+
+  
+  
