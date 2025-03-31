@@ -38,10 +38,10 @@ const teamMembers = [
 ];
 
 // creazione delle card
-let container =document.querySelector(".container")
-
+let contenitore = document.getElementById("contenitore")
+ console.log(contenitore)
 let userCard = (member) =>{
- const card = ` <div class="row ms-3">
+ const card = ` 
         <div class="col-12 col-md-6 col-lg-4">
             <div class="card bg-dark text-light d-flex flex-row overflow-hidden">
                 <img src="./${member.img}" alt="foto" class="img">
@@ -53,14 +53,13 @@ let userCard = (member) =>{
                     </a>
                 </div>
             </div>
-        </div>
-    </div>`
-
+        </div> `
+ return card
 }
 for (let i= 0; i< teamMembers.length; i++) {
   
 
-  container.innerHTML +=  userCard(teamMembers(i))
+  contenitore.innerHTML +=  userCard(teamMembers[i])
 }
 
 
