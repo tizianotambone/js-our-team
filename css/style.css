@@ -18,3 +18,8 @@ h2{
         font-style: normal;
       
 }
+.box {
+    display: flex;
+    justify-content: center;
+    
+}

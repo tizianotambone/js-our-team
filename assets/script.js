@@ -42,7 +42,7 @@ let contenitore = document.querySelector(".box")
  console.log(contenitore)
 let userCard = (member) =>{
  const card = ` 
-        <div class="col-12 col-md-6  mt-3">
+        <div class="col-12 col-md-6  mt-3  d-flex justify-content-center">
             <div class="card bg-dark text-light d-flex flex-row overflow-hidden">
                 <img src="./assets/${member.img}" alt="foto" class="img">
                 <div class="p-3">
